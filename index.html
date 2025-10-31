@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>25時、ナイトコードで。</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      background: url("bg1.png") center/cover no-repeat;
+      color: #fff;
+      font-family: 'Noto Sans JP', sans-serif;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+
+    header {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 48px;
+      background: rgba(0, 0, 0, 0.5);
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      padding: 0 20px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    }
+
+    .menu {
+      width: 24px;
+      height: 18px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      cursor: pointer;
+    }
+
+    .menu div {
+      height: 2px;
+      background: white;
+      opacity: 0.8;
+      border-radius: 1px;
+    }
+
+    main {
+      text-align: center;
+      margin-top: 60px;
+    }
+
+    .title {
+      font-size: 1.1rem;
+      letter-spacing: 0.3em;
+      margin-bottom: 1.5em;
+      color: rgba(255,255,255,0.9);
+    }
+
+    .countdown {
+      font-family: 'Orbitron', sans-serif;
+      font-size: 4rem;
+      letter-spacing: 0.1em;
+      font-weight: 400;
+      color: #ffffff;
+      text-shadow: 0 0 20px rgba(100,150,255,0.3);
+      margin-bottom: 1em;
+    }
+
+    .labels {
+      display: flex;
+      justify-content: center;
+      gap: 2em;
+      font-size: 0.8rem;
+      font-family: 'Orbitron', sans-serif;
+      opacity: 0.7;
+      letter-spacing: 0.1em;
+      margin-bottom: 2em;
+    }
+
+    .btn {
+      background: rgba(255, 255, 255, 0.2);
+      color: white;
+      border: 1px solid white;
+      border-radius: 8px;
+      padding: 0.6em 1.2em;
+      text-decoration: none;
+      transition: background 0.2s;
+      display: inline-block;
+      margin-top: 0.8em;
+    }
+
+    .btn:hover {
+      background: rgba(255, 255, 255, 0.4);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 8px;
+      left: 0;
+      right: 0;
+      text-align: center;
+      font-size: 0.7rem;
+      color: rgba(255, 255, 255, 0.6);
+      background: rgba(0, 0, 0, 0.3);
+      padding: 6px 10px;
+      line-height: 1.4;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="menu">
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </header>
+
+  <main>
+    <div class="title">２５時、ナイトコードで。</div>
+    <div class="countdown" id="countdown">00:00:00</div>
+    <div class="labels">
+      <div>Hours</div>
+      <div>Minutes</div>
+      <div>Seconds</div>
+    </div>
+    <a class="btn" href="https://youtu.be/WkGgD_RF5V8" target="_blank">PLAYTUBINGで視聴する</a>
+  </main>
+
+  <footer>
+    本ウェブサイトは動画内のいかなる素材の著作権も所有しておらず、すべての著作権は正当な権利者に帰属します。<br>
+    これには、松竹、P.A.Works、セガ、Colorful Palette、クリプトンなどが含まれますが、これらに限定されません。<br>
+    本ウェブサイトは、松竹、P.A.Works、セガ、Colorful Palette、クリプトンと一切の商業的関係や取引関係にありません<br>
+    <a href="https://github.com/IaSoC/nightcordat25.com" target="_blank">ソースコードへのリンク</a>
+  </footer>
+</body>
+</html>
+<!--
+如果你是从电影那里追过来的话，那么你找对地方了。
+很可惜，我并不是 mizuki，也不是 SEGA 官方人员。这个页面也是 ChatGPT 写的。我能做到的就是读懂这些代码。
+因此我能做到的页面还原极限，是这样的。字体确实没能找到很合适的，应该是专门定做的 Display Font。
+这是我二刷的时候注意到的细节。在 kanade 喝功能饮料的时候，桌面上有这样一个，剧情设定是 mizuki 搭建的 countdown 网页。
+然后我发现 SEGA 没有买下这个 Domain。所以我就做了。
+也因此有了页面上的 footer。
+时间也不早了，那就各位晚安。Lycheer 2025.11.01 at 26:00.
+-->
