@@ -160,6 +160,30 @@
     本ウェブサイトは、松竹、P.A.Works、セガ、Colorful Palette、クリプトンと一切の商業的関係や取引関係にありません<br>
     <a href="https://github.com/IaSoC/nightcordat25.com" target="_blank">ソースコードへのリンク</a>
   </footer>
+  <script>
+/* ---------- 可选：启用真实倒计时（把 targetDate 改为你想倒计时至的时间） ---------- */
+(() => {
+  const el = document.getElementById('countdown');
+  // 如果你想显示真实倒计时，把下面 targetDate 改成目标时间（本例为一个过去的示例）
+  const targetDate = new Date("2025-01-17T00:00:00+09:00"); // 示例：2025-11-20 JST
+  function pad(n){return String(n).padStart(2,'0');}
+  function tick(){
+    const now=new Date();
+    let diff = Math.max(0, Math.floor((targetDate - now)/1000));
+    const h = Math.floor(diff/3600);
+    const m = Math.floor((diff%3600)/60);
+    const s = diff%60;
+    if(diff<=0){ el.textContent = "00:00:00"; clearInterval(tid); return; }
+    // 如果你想把小时限定到两位，可以改为 %24 之类；此处显示总小时数
+    el.textContent = pad(h) + ":" + pad(m) + ":" + pad(s);
+  }
+  // 仅在 targetDate 为未来时启用
+  if(targetDate > new Date()){
+    tick();
+    var tid = setInterval(tick, 1000);
+  }
+})()
+</script>
 </body>
 </html>
 <!--
