@@ -30,6 +30,8 @@ When I noticed this detail during my second watch, I realized that **SEGA hadn�
 
 So—I bought it, and decided to rebuild that page myself.
 
+**With Assistense from LLM. I will explain later.**
+
 ---
 
 ## Function List
@@ -52,7 +54,7 @@ I simply understand a bit of programming — mainly C and Python, not front-end 
 
 but I wanted to recreate that glowing midnight countdown.
 
-
+**That's why I use LLM for coding. I don't have skills on frot-end. Still, I can recognise the funcions of css sytles. xD**
 
 The fonts weren’t easy to match.
 
