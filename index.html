@@ -164,11 +164,9 @@
     <a href="https://github.com/IaSoC/nightcordat25.com" target="_blank">ソースコードへのリンク</a>
   </footer>
   <script>
-/* ---------- 可选：启用真实倒计时（把 targetDate 改为你想倒计时至的时间） ---------- */
 (() => {
   const el = document.getElementById('countdown');
-  // 如果你想显示真实倒计时，把下面 targetDate 改成目标时间（本例为一个过去的示例）
-  const targetDate = new Date("2025-01-17T00:00:00+09:00"); // 示例：2025-11-20 JST
+  const targetDate = new Date("2025-01-17T00:00:00+09:00");
   function pad(n){return String(n).padStart(2,'0');}
   function tick(){
     const now=new Date();
@@ -177,24 +175,48 @@
     const m = Math.floor((diff%3600)/60);
     const s = diff%60;
     if(diff<=0){ el.textContent = "00:00:00"; clearInterval(tid); return; }
-    // 如果你想把小时限定到两位，可以改为 %24 之类；此处显示总小时数
     el.textContent = pad(h) + ":" + pad(m) + ":" + pad(s);
   }
-  // 仅在 targetDate 为未来时启用
   if(targetDate > new Date()){
     tick();
     var tid = setInterval(tick, 1000);
   }
+  // 関係ないよ　もう目の前に　ちゃんと君がいるから
 })()
 </script>
 </body>
 </html>
 <!--
-如果你是从电影那里追过来的话，那么你找对地方了。
-很可惜，我并不是 mizuki，也不是 SEGA 官方人员。这个页面也是 ChatGPT 写的。我能做到的就是读懂这些代码。
-因此我能做到的页面还原极限，是这样的。字体确实没能找到很合适的，应该是专门定做的 Display Font。
-这是我二刷的时候注意到的细节。在 kanade 喝功能饮料的时候，桌面上有这样一个，剧情设定是 mizuki 搭建的 countdown 网页。
+如果你是从电影那里找过来的话，那么，这应该是你的落脚之处。
+很可惜，我并不是 Mizuki，也不是 SEGA 官方人员。这个页面大部分也是 ChatGPT 写的。我能做到的就是读懂这些代码。
+因此我能做到的页面还原极限，是这样的。字体确实没能找到很合适的，应该是专门定做的字体。
+这是我二刷的时候注意到的细节。在 kanade 喝功能饮料的时候，电脑桌面上有这样一个，剧情设定上是 mizuki 搭建的 countdown 网页。
 然后我发现 SEGA 没有买下这个 Domain。所以我就做了。
-也因此有了页面上的 footer。
-时间也不早了，那就各位晚安。Lycheer 2025.11.01 at 26:40.
+也因此有了页面上 footer 里的 copyright notice。
+时间也不早了，那就各位晚安。Lycheer 2025.10.31 at 26:40.
+-->
+<!--
+第二天。花了几个小时的时间，把 countdown 的数字字体还原了。钢笔工具描边，然后扔进 FontForge 里面。
+剩下的同字体日文，确实看不清，很难再去还原了，就用了常见字体来替代。
+昨天的时候，我说自己并不是 Mizuki。这句话是从我做这个网页的过程来的。
+我虽然稍了解一些 Programming，但是我的技术栈是 C/Python。而不是前端。
+所以，我说，我不像 Mizuki 一样，能灵活的运用剪辑软件和写前端网页。
+但也许可以不那么否定自己的。
+你啊，从小到大，19年里，最爱干的事情
+就是说：你做的都是你应该做的没什么大不了的。
+至少你愿意为了你自己喜爱的 IP 而付出你自己的时间，
+这就已经很 25-ji, Nightcord-de 了。
+心から打ち込めることがあれば、それをやりましょう。
+“誰が教えたの？” “瑞希が教えたの。”
+Lycheer 2025.11.01 27:11。
+-->
+<!--
+25時に来たあなたは、きっとあのアドレスバーに気づいたはず。
+私にとって、あなたが来てくれただけで、もう十分です。
+“光って　光って　眠らない25時”
+-->
+<!--
+This is an unofficial project. For any concern, please email to lycheer@iasoc.org
+これは非公式プロジェクトです。お問い合わせは lycheer@iasoc.org までメールでお願いいたします。
+非官方网页。相关问题请发电邮到 lycheer@iasoc.org。
 -->
